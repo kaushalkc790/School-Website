@@ -1,0 +1,336 @@
+*{
+    font-family:'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin:0;
+}
+
+/* General CSS */
+:root {
+    --PrimaryColor:rgb(41, 49, 97);
+    --LightColor: #fff;
+    --SecondaryColor:#f99a00;
+    --DarkColor:#585858;
+
+
+    --bg-white: #fff;
+
+    /* Text Colors */
+    --primary-text: #061738;
+    --secondary-color: #60cd12;
+    --light-color: #e2f6de;
+    
+
+    /* Font Family */
+    --primary-font:'Barlow Condensed',sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-btn {
+    position: relative;
+    color:var(--bg-white);
+    background: linear-gradient(to right, #0f7404, #5cb917);
+    z-index: 1;
+    overflow: hidden;
+    border: 2rem solid var(--bg-white);
+    border-radius: 35px;
+    text-transform: uppercase;
+    padding:10px 35px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+.primary-color {
+    background-color:var(--PrimaryColor);
+}
+
+/* Header CSS */
+.top-header-span {
+    font-size:13px;
+    vertical-align: middle;
+}
+
+/* Navbar style */
+.nav-item .nav-link {
+    font-size: 13px!important;
+    font-weight: 400;
+    color:var(--DarkColor)!important;
+    margin-left: 5px!important;
+}
+
+.nav-item .active{
+    color:black!important;
+    font-weight: 500!important;
+}
+.navbar {
+    background-color: #FFFDD0;
+}
+.nav-item:hover{
+    background-color: #fff;
+}
+
+/*Hero */
+.hero .carousel-item img{
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .carousel-item::before {
+    content: '';
+    background-color: #042e42;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: .6;
+}
+
+.hero .carousel-item .carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.hero .carousel-topics{
+    text-align: center;
+    width:70%;
+}
+
+.hero .carousel-heading-topics{
+    color:var(--LightColor);
+    font-size: 38px;
+    font-weight: 700;;
+}
+
+.school-name{
+    color:#FFFDD0;
+}
+
+.hero .carousel-item p {
+    font-size: 14px;
+    color:var(--LightColor);
+}
+
+/* Student Info */
+.std-info .info-icons{
+    height:150px;
+    width:150px;
+    padding:10px;
+}
+
+.std-info .card-title{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.btn-outline-dark{
+    border: var(--PrimaryColor)!important;
+    background-color: var(--PrimaryColor)!important;
+    color: var(--LightColor)!important;
+}
+
+.btn-outline-dark:hover{
+    border-color: var(--PrimaryColor)!important;
+    background-color: transparent!important;
+    color: var(--PrimaryColor)!important;
+}
+
+
+
+/*Footer Custom css*/
+
+.footer {
+    background-color:var(--DarkColor);
+}
+
+.list-item {
+    margin-bottom:20px;
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+.sub-heading {
+    margin-bottom: 5px;
+}
+.anchor {
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+}
+.date {
+    color:whitesmoke;
+    font-size: 14px;
+}
+.text {
+    margin-left: 10px;
+}
+.block-1a {
+    display: flex;
+    margin-bottom: 10px;
+}
+.anchor:hover {
+    color:#d3e3fd;   
+}
+.social-icon {
+    display: flex;
+} 
+
+i:hover { 
+    -webkit-text-stroke: 1px;
+}
+.copyright-section {
+    background-color: #959595;
+    text-align: center;
+    margin-bottom: 0;
+}
+.copyright-section p{
+    margin-top:0;
+    margin-bottom: 0;
+    padding:3rem 0;
+    line-height: 0;
+}
+.copyright-section a{
+    color:var(--primary-text);
+    font-weight: 600;
+    text-decoration: none;
+}
+.service{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin:10px;
+}
+.service h3{
+    width:80px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.icon img{
+    height: 100px;
+    width: 100px;
+}
+
+
+.studentSay_section {
+    background-color: var(--light-color);
+    padding-top:15px;
+    padding-bottom: 60px;
+ }
+ .studentSay_section .carousel-indicators{
+    bottom: -60px;
+ }
+ .studentSay_section .carousel-indicators button{
+    background-color:green;
+    width: 1.2rem;
+    height: 1.3rem;
+    border-radius: 50%;
+ }
+ .offer_section{
+    padding-top:25px;
+    padding-bottom: 25px;
+    background-color: rgb(233, 233, 233);
+ }
+
+.about .banner_section,
+.course .banner_section,
+.notice .banner_section,
+.news .banner_section,
+.contact .banner_section{
+background:url('../assets/bgBanner.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding-top: 17rem;
+padding-bottom: 10rem;
+min-height: auto;
+}
+.banner-content{
+    padding-left:250px;
+}
+.banner-content h1 {
+    font-size: 6rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: black;
+}
+
+/* Contact Page CSS */
+.contact .contact-form{
+    background-color: var(--light-color);
+    padding: 5rem;
+    box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 4%);
+}
+
+.contact .contact-form .form-control:focus{
+    outline:none;
+    box-shadow: none;
+}
+.contact .contact-form .form-control::placeholder{
+    color:var(--primary-text);
+}
+.contact .contact-form .form-control{
+    padding: 10px 15px;
+    border: 1px solid var(--secondary-color);
+    color:var(--primary-text);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+}
+.contact .contact-form textarea{
+    min-height: 125px;
+}
+.contact .contact-form .info-box li{
+    position: relative;
+    padding-left: 70px;
+    padding-bottom: 35px;
+    margin-bottom: 29px;
+}
+
+.contact .contact-form .info-box li i{
+    position:absolute;
+    left:0;
+    top:15px;
+    font-size: 45px;
+    line-height: 45px;
+    color:var(--primary-text);
+}
+.contact .contact-form .info-box li p{
+    color:var(--primary-text);
+}
+.contact .contact-form .info-box li a{
+    color:var(--dark-color);
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-family: var(--secondary-font);
+    text-decoration: none;
+}
+.contact .contact_section{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.pic img{
+    height: 380px;
+    width: 450px;
+}
+.course-details p{
+    text-align: justify;
+}
+ 
+  

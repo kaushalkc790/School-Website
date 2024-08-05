@@ -1,0 +1,72 @@
+/* Media Query 1170px */
+@media (max-width:1170px) {
+    
+    /* 02 Banner Section */
+    .about .banner_section,
+    .course .banner_section,
+    .news .banner_section,
+    .notice .banner_section,
+    .contact .banner_section{
+    padding-top: 125px;
+    padding-bottom: 30px;
+    min-height: 95vh;
+}
+.banner-content h1{
+    font-size: 4rem;
+    line-height: 1.4;
+    font-weight: 550;
+    color: black;
+}
+}
+/* Media Query 991px */
+@media (max-width:991px) {
+    /* General CSS */
+    .about .banner_section,
+    .course .banner_section,
+    .news .banner_section,
+    .notice .banner_section,
+    .contact .banner_section{
+    padding-top: 115px;
+    padding-bottom: 25px;
+    min-height: 85vh;
+}
+    .banner-content h1{
+        font-size: 3.8rem;
+        line-height: 1.4;
+        font-weight: 550;
+        color: black;
+    }
+}
+
+/* Media Query 767px */
+@media (max-width:767px) {
+    /* General CSS */
+    body,html{
+        font-size:8px;
+    }
+    /* 02 Banner Section */
+    .banner_section{
+        min-height: 80vh;
+    }
+    .banner-content h1{
+        font-size: 2.8rem;
+        line-height: 1.4;
+        color: black;
+    }
+
+}
+
+@media (max-width:590) {
+    /* General CSS */
+    body,html{
+        font-size:7px;
+    }
+    .banner_section{
+        min-height: 70vh;
+    }
+    .banner-content h1{
+        font-size: 2.6rem;
+        line-height: 1.4;
+        color: black;
+    }
+}
